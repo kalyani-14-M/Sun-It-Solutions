@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sun IT Solutions</title>
     <link rel="stylesheet" href="soft.css">
+    <title>Sun IT Solutions </title>
 </head>
 <body>
     <header>
-        <h1> Sun IT Solutions </h1>
+        <h1>Sun IT Solutions </h1>
         <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out us. We'd love to hear from you!</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required></label><br>
-            
-            <input type="email" placeholder="Your Email" required><br>
-            
-            <br>
-            <textarea placeholder="Your Message" required></textarea><br>
+        <p>If you have any questions, feel free to reach out to us. We’d love to hear from you!</p>
         
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
             
-            <button type="submit">SendMessage</button>
-        </form>
-    </div>
-</div>
-    <div class="footer">
-        <footer>
-<h4>Contact Details</h4>
-<p>Phone +91234567890</p>
-<p>Location:Bulding 1, 10th Floor, Mindspace-Madhapur road.HITECH city. Hyderabad Telangana 500008</p>
-        </footer>
-        <script src="soft.js"></script>
-        <script src="Vanilla.js"></script>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+            
+            <button type="submit">Submit</button>
+            <footer>
+                <h6>Contact Details</h6>
+                <p>Phone: +91 934789080</p>
+                <p>Location: Building 1, 10th Floor</p>
+                <p>Mindspace-Madhapur Road, HITECH City</p>
+                <p>Hyderabad, Telangana - 500008</p>
+            </footer>
+            
+
+    <script src="Vanilla.js"></script>
+    
 </body>
 </html>
