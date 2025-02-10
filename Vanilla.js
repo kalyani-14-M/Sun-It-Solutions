@@ -24,3 +24,10 @@ function getBotResponse(input) {
     if (input.includes("contact")) return "You can reach us at support@itcompany.com.";
     return "I'm not sure how to respond to that.";
 }
+function startChat() {
+    document.getElementById("chatbot").style.display = "block";
+}
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Message Sent Successfully!");
+});
